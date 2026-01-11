@@ -1,0 +1,54 @@
+services:
+  # Backend Web Service
+  - type: web
+    name: vyaaparsahayak-backend
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /dashboard
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.0
+      - key: GROQ_API_KEY
+        sync: false
+      - key: SERPAPI_KEY
+        sync: false
+    rootDir: backend
+    autoDeploy: true
+
+  # Frontend Static Site
+  - type: web
+    name: vyaaparsahayak-frontend
+    env: static
+    region: oregon
+    plan: free
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: public, max-age=31536000, immutable
+      - path: /index.html
+        name: Cache-Control
+        value: no-cache
+    routes:
+      - type: rewrite
+        source: /api/*
+        destination: https://vyaaparsahayak-backend.onrender.com/*
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: NODE_VERSION
+        value: 18.17.0
+      - key: VITE_API_URL
+        value: https://vyaaparsahayak-backend.onrender.com
+    rootDir: frontend
+    autoDeploy: true
+
+databases:
+  # Note: Render Free tier doesn't include persistent storage
+  # SQLite will reset on each deploy
+  # For production, consider upgrading to a paid plan with PostgreSQL

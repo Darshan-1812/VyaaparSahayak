@@ -1,0 +1,86 @@
+ [
+  {
+    "name": "MSME Loan Guarantee Scheme",
+    "description": "Credit guarantee scheme for micro and small enterprises to provide collateral-free loans",
+    "eligibility_json": "{\"msme_registered\": true, \"annual_revenue\": {\"max\": 25000000}}",
+    "benefits": "Collateral-free loans up to ₹2 crore, Lower interest rates, Government guarantee coverage",
+    "source": "Ministry of MSME"
+  },
+  {
+    "name": "Startup India Seed Fund Scheme",
+    "description": "Financial assistance to startups for proof of concept, prototype development, product trials, market entry, and commercialization",
+    "eligibility_json": "{\"growth_stage\": \"early\", \"annual_revenue\": {\"max\": 50000000}}",
+    "benefits": "Seed funding up to ₹50 lakhs, Mentorship support, Tax benefits under Section 80-IAC",
+    "source": "Department for Promotion of Industry and Internal Trade (DPIIT)"
+  },
+  {
+    "name": "Credit Linked Capital Subsidy Scheme (CLCSS)",
+    "description": "Technology upgradation support for MSMEs with capital subsidy on institutional finance",
+    "eligibility_json": "{\"msme_registered\": true, \"industry\": [\"manufacturing\", \"textile\", \"food processing\"]}",
+    "benefits": "15% capital subsidy on institutional finance up to ₹1 crore, Technology upgradation support",
+    "source": "Ministry of MSME"
+  },
+  {
+    "name": "Prime Minister's Employment Generation Programme (PMEGP)",
+    "description": "Credit linked subsidy programme for setting up new micro-enterprises",
+    "eligibility_json": "{\"business_type\": [\"manufacturing\", \"service\", \"retail\"], \"location\": [\"rural\", \"urban\"]}",
+    "benefits": "Subsidy of 15-35% on project cost, Working capital support, Training assistance",
+    "source": "Ministry of MSME"
+  },
+  {
+    "name": "Stand-Up India Scheme",
+    "description": "Facilitating bank loans for setting up greenfield enterprises in manufacturing, services or trading sector",
+    "eligibility_json": "{\"growth_stage\": \"early\", \"business_type\": [\"manufacturing\", \"service\", \"trading\"]}",
+    "benefits": "Loans between ₹10 lakh to ₹1 crore, Lower interest rates, Handholding support",
+    "source": "Department of Financial Services"
+  },
+  {
+    "name": "Technology Upgradation Fund Scheme (TUFS)",
+    "description": "Support for technology upgradation in textile and jute industries",
+    "eligibility_json": "{\"industry\": [\"textile\", \"jute\"], \"msme_registered\": true}",
+    "benefits": "5% interest reimbursement, 15% capital subsidy for specified machinery, Flexible repayment terms",
+    "source": "Ministry of Textiles"
+  },
+  {
+    "name": "National Small Industries Corporation (NSIC) Subsidy",
+    "description": "Various schemes for marketing support, technology support, and credit facilitation",
+    "eligibility_json": "{\"msme_registered\": true, \"annual_revenue\": {\"max\": 100000000}}",
+    "benefits": "Marketing support, Credit rating fee subsidy, ISO certification subsidy, Technology support",
+    "source": "NSIC"
+  },
+  {
+    "name": "Pradhan Mantri Mudra Yojana",
+    "description": "Provides loans to non-corporate, non-farm small/micro enterprises",
+    "eligibility_json": "{\"business_type\": [\"manufacturing\", \"service\", \"retail\", \"trading\"], \"annual_revenue\": {\"max\": 10000000}}",
+    "benefits": "Loans up to ₹10 lakh (Shishu: ₹50K, Kishore: ₹5L, Tarun: ₹10L), No collateral required",
+    "source": "Ministry of Finance"
+  },
+  {
+    "name": "Credit Guarantee Fund Trust for Micro and Small Enterprises (CGTMSE)",
+    "description": "Provides guarantees for loans extended to MSMEs without collateral",
+    "eligibility_json": "{\"msme_registered\": true, \"annual_revenue\": {\"max\": 50000000}}",
+    "benefits": "Collateral-free credit up to ₹2 crore, 85% guarantee coverage, Composite loan facility",
+    "source": "Ministry of MSME"
+  },
+  {
+    "name": "Make in India Initiative",
+    "description": "Facilitating investment, fostering innovation, enhancing skill development, protecting intellectual property",
+    "eligibility_json": "{\"business_type\": [\"manufacturing\"], \"industry\": [\"electronics\", \"automotive\", \"pharma\", \"renewable energy\"]}",
+    "benefits": "Tax incentives, Ease of doing business, Infrastructure development support",
+    "source": "Department for Promotion of Industry and Internal Trade"
+  },
+  {
+    "name": "Atal Innovation Mission (AIM)",
+    "description": "Government's flagship initiative to promote innovation and entrepreneurship",
+    "eligibility_json": "{\"growth_stage\": \"early\", \"industry\": [\"technology\", \"innovation\"]}",
+    "benefits": "Grant support up to ₹2.5 crore, Mentorship, Incubation support, Access to innovation labs",
+    "source": "NITI Aayog"
+  },
+  {
+    "name": "Digital India Programme",
+    "description": "Support for digital transformation of businesses and infrastructure",
+    "eligibility_json": "{\"industry\": [\"technology\", \"software\", \"e-commerce\"], \"business_type\": [\"service\"]}",
+    "benefits": "Digital infrastructure support, Skills development, Tax benefits for digital startups",
+    "source": "Ministry of Electronics and IT"
+  }
+]
